@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e5e8eb"/><stop offset="1" stop-color="#b8c9d7"/></linearGradient><linearGradient id="coat" x2="1" y2="1"><stop stop-color="#6687a3"/><stop offset="1" stop-color="#345877"/></linearGradient></defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <g fill="none" stroke="#89a2b8" opacity=".35"><circle cx="575" cy="620" r="410"/><circle cx="575" cy="620" r="325"/><path d="M100 1180h900M575 100v1210M100 620h900"/></g>
+  <path d="M270 1320v-195c0-250 135-370 305-370s305 120 305 370v195" fill="url(#coat)"/>
+  <path d="M495 670h160v145l-80 95-80-95z" fill="#b7c8d5"/>
+  <ellipse cx="575" cy="487" rx="168" ry="222" fill="#c4d2dc"/>
+  <path d="M409 478c-31-175 33-281 166-281 154 0 205 119 166 281l-45-115-197 19-90 96z" fill="#647d92"/>
+  <path d="m495 792 80 118-107 108-52-191m239-35-80 118 107 108 52-191" fill="#8ca5ba"/>
+  <g fill="#4e6c85" font-family="sans-serif" letter-spacing="7"><text x="70" y="110" font-size="20">YOUR PORTRAIT</text><text x="70" y="1380" font-size="16">REPLACE WITH YOUR OWN IMAGE</text></g>
+</svg>
