@@ -1,0 +1,23 @@
+# System / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local state / build output
+node_modules/
+dist/
+tmp/
+.verification/
+*.log
+*.zip
+__pycache__/
+
+# Private drafts and environment settings
+.env
+.env.*
+!.env.example
+*.doc
+*.docx
+*.bak
+~$*

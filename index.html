@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e5e8eb">
+  <meta name="description" content="可自由替换内容的个人简历与作品集模板。">
+  <title>个人档案 — 简历网站模板</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <noscript><p class="no-script">此模板使用 JavaScript 加载简历内容，请启用 JavaScript 后刷新页面。</p></noscript>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <div class="progress-line" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <a class="brand" href="#about" id="brand"></a>
+    <nav class="nav" id="siteNav" aria-label="主导航">
+      <a href="#about" class="active" aria-current="location">关于我</a>
+      <a href="#skills">能力档案</a><a href="#projects">实践项目</a>
+      <a href="#experience">成长经历</a><a href="#contact">联系 / 简历</a>
+    </nav>
+    <span class="header-note" id="headerNote"></span>
+    <button class="menu-btn" id="menuBtn" aria-label="打开导航" aria-expanded="false" aria-controls="siteNav"><span></span><span></span></button>
+  </header>
+  <main id="main">
+    <section class="hero" id="about" aria-labelledby="heroTitle"></section>
+    <section class="overview" id="profile" aria-label="个人档案概览"></section>
+    <section class="section about-section" aria-labelledby="aboutTitle">
+      <div class="section-marker"><span>01 / ABOUT ME</span><span>认识我</span></div>
+      <div class="about-layout" id="aboutContent"></div>
+      <div class="facts" id="facts"></div>
+    </section>
+    <section class="section skills-section" id="skills" aria-labelledby="skillsTitle">
+      <div class="section-marker"><span>02 / CAPABILITY FILES</span><span>能力档案</span></div>
+      <div class="section-heading"><h2 id="skillsTitle">长处，来自做过的事。</h2><p>在实践中积累，在协作中成长。</p></div>
+      <div class="capability-grid" id="skillCards"></div>
+    </section>
+    <section class="section projects-section" id="projects" aria-labelledby="projectsTitle">
+      <div class="section-marker"><span>03 / SELECTED WORK</span><span>实践项目</span></div>
+      <div class="section-heading"><div><h2 id="projectsTitle">把想法，落到实处。</h2><p>记录问题、过程，以及每一次实践的收获。</p></div><div class="filters" id="filters" role="group" aria-label="按项目方向筛选"></div></div>
+      <p class="sr-only" id="filterStatus" role="status" aria-live="polite"></p>
+      <div class="project-grid" id="projectCards"></div>
+    </section>
+    <section class="section experience-section" id="experience" aria-labelledby="experienceTitle">
+      <div class="section-marker"><span>04 / EXPERIENCE LOG</span><span>工作与实践</span></div>
+      <div class="experience-layout"><div class="experience-intro"><h2 id="experienceTitle">经历现场，<br>也积累方法。</h2><p>每一段经历，<br>都是理解问题的新起点。</p><span class="outline-word" aria-hidden="true">FIELD<br>NOTES.</span></div><div class="experience-list" id="experienceEntries"></div></div>
+    </section>
+    <section class="section education-section" id="education" aria-labelledby="educationTitle">
+      <div class="section-marker"><span>05 / LEARNING & GROWTH</span><span>教育与校园</span></div>
+      <div class="section-heading"><h2 id="educationTitle">持续学习，向外探索。</h2><p>专业基础之外，也在团队和新的环境中成长。</p></div>
+      <div class="education-grid" id="educationContent"></div>
+      <div id="honorsContent"></div>
+    </section>
+    <section class="section contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="section-marker"><span>06 / LET'S CONNECT</span><span>保持联系</span></div>
+      <div class="contact-layout" id="contactContent"></div>
+      <div class="contact-footer"><span id="githubLink"></span><a href="#about">返回顶部 ↑</a></div>
+    </section>
+  </main>
+  <footer class="footer" id="footer"></footer>
+  <dialog id="projectModal" aria-labelledby="modalTitle"><div class="modal-inner"><button class="modal-close" aria-label="关闭项目档案">×</button><p class="eyebrow" id="modalKicker"></p><h2 id="modalTitle"></h2><p class="modal-summary" id="modalSummary"></p><div id="modalDetails"></div><div class="modal-tags" id="modalTags"></div><div class="modal-links" id="modalLinks"></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
